@@ -16,7 +16,6 @@
     Blog.create!(
       title: "My Blog Post: #{blog}",
       body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremq",
-      status: 0,
       topic_id: Topic.last.id
       )
   end
