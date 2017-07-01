@@ -39,7 +39,6 @@
       )
   end
   
-  puts "9 portfolio items created"
   
  1.times do |portfolio_item|
     Portfolio.create!(
@@ -49,4 +48,13 @@
       main_image: "http://via.placeholder.com/600x400",
       thumb_image: "http://via.placeholder.com/350x200" 
       )
+  end
+  
+  puts "9 portfolio items created"
+  
+  3.times do |technology|
+    Technology.create!(
+      name:"Technology #{technology}",
+      portfolio_id: Portfolio.last.id
+    )
   end
