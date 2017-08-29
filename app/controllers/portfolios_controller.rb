@@ -45,12 +45,12 @@ class PortfoliosController < ApplicationController
   end
 
   def destroy
-    #Destroy/delete the record
+    # Destroy/delete the record
     @portfolio_item.destroy
-    
+
     # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Record was successfully destroyed.' }
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
   
