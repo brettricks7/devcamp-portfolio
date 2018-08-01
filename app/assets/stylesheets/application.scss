@@ -157,13 +157,24 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
 /*
  * Custom Styles
  */
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+ .tech-news > .card {
+  padding: 30px;
+}
+ .tech-news a {
+  color: green;
+}
 
 .card-block {
   color: black;
